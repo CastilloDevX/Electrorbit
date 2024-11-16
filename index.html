@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectrOrbit</title>
+
+    <link rel="shortcut icon" href="svg/electrorbit_icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+    
+    <script src="js/model-viewer.min.js"></script>
+</head>
+<body>
+    <header>
+        <a id="logo" href="/electrorbit/">
+            <img src="svg/electrorbit_logo.svg" alt="">
+        </a>
+        
+        <label id="electronic-toggle-label" for="electronic-toggle">
+            <input id="electronic-toggle" type="checkbox">
+            <img src="svg/electron_valency_logo.svg" alt="">
+        </label>
+    </header>
+
+    <main>
+        <div id="periodic-table">
+            <div class="grupo">
+                <div id="space" class="space"></div>
+                <div id="space" class="space"></div>
+                <div id="element-87" class="element">87</div>
+                <div id="element-55" class="element">55</div>
+                <div id="element-37" class="element">37</div>
+                <div id="element-19" class="element">19</div>
+                <div id="element-11" class="element">11</div>
+                <div id="element-3" class="element">3</div>
+                <div id="element-1" class="element">
+                    <div class="element-info">
+                        <span class="element-number">1</span>
+                        <p class="symbol">H</p>
+                    </div>
+                    <div class="element-color"></div>
+                </div>
+            </div>
+        
+            <div class="grupo">
+                <div id="space" class="space"></div>
+                <div id="space" class="space"></div>
+                <div id="element-88" class="element">88</div>
+                <div id="element-56" class="element">56</div>
+                <div id="element-38" class="element">38</div>
+                <div id="element-20" class="element">20</div>
+                <div id="element-12" class="element">12</div>
+                <div id="element-4" class="element">4</div>
+            </div>
+        
+            <div class="grupo">
+                <div id="element-89" class="element">89</div>
+                <div id="element-57" class="element">57</div>
+                <div id="element-AC" class="element"></div>
+                <div id="element-LA" class="element"></div>
+                <div id="element-39" class="element">39</div>
+                <div id="element-21" class="element">21</div>
+            </div>
+        
+            <div class="grupo">
+                <div id="element-90" class="element">90</div>
+                <div id="element-58" class="element">58</div>
+                <div id="element-104" class="element">104</div>
+                <div id="element-72" class="element">72</div>
+                <div id="element-40" class="element">40</div>
+                <div id="element-22" class="element">22</div>
+            </div>
+        
+            <div class="grupo">
+                <div id="element-91" class="element">91</div>
+                <div id="element-59" class="element">59</div>
+                <div id="element-105" class="element">105</div>
+                <div id="element-73" class="element">73</div>
+                <div id="element-41" class="element">41</div>
+                <div id="element-23" class="element">23</div>
+            </div>
+        
+            <div class="grupo">
+                <div id="element-92" class="element">92</div>
+                <div id="element-60" class="element">60</div>
+                <div id="element-106" class="element">106</div>
+                <div id="element-74" class="element">74</div>
+                <div id="element-42" class="element">42</div>
+                <div id="element-24" class="element">24</div>
+            </div>
+        
+            <div class="grupo">
+                <div id="element-93" class="element">93</div>
+                <div id="element-61" class="element">61</div>
+                <div id="element-107" class="element">107</div>
+                <div id="element-75" class="element">75</div>
+                <div id="element-43" class="element">43</div>
+                <div id="element-25" class="element">25</div>
+            </div>
+        
+            <div class="grupo">
+                <div id="element-94" class="element">94</div>
+                <div id="element-62" class="element">62</div>
+                <div id="element-108" class="element">108</div>
+                <div id="element-76" class="element">76</div>
+                <div id="element-44" class="element">44</div>
+                <div id="element-26" class="element">26</div>
+            </div>
+        
+            <div class="grupo">
+                <div id="element-95" class="element">95</div>
+                <div id="element-63" class="element">63</div>
+                <div id="element-109" class="element">109</div>
+                <div id="element-77" class="element">77</div>
+                <div id="element-45" class="element">45</div>
+                <div id="element-27" class="element">27</div>
+            </div>
+        
+            <div class="grupo">
+                <div id="element-96" class="element">96</div>
+                <div id="element-64" class="element">64</div>
+                <div id="element-110" class="element">110</div>
+                <div id="element-78" class="element">78</div>
+                <div id="element-46" class="element">46</div>
+                <div id="element-28" class="element">28</div>
+            </div>
+        
+            <div class="grupo">
+                <div id="element-97" class="element">97</div>
+                <div id="element-65" class="element">65</div>
+                <div id="element-111" class="element">111</div>
+                <div id="element-79" class="element">79</div>
+                <div id="element-47" class="element">47</div>
+                <div id="element-29" class="element">29</div>
+            </div>
+        
+            <div class="grupo">
+                <div id="element-98" class="element">98</div>
+                <div id="element-66" class="element">66</div>
+                <div id="element-112" class="element">112</div>
+                <div id="element-80" class="element">80</div>
+                <div id="element-48" class="element">48</div>
+                <div id="element-30" class="element">30</div>
+            </div>
+        
+            <div class="grupo">
+                <div id="element-99" class="element">99</div>
+                <div id="element-67" class="element">67</div>
+                <div id="element-113" class="element">113</div>
+                <div id="element-81" class="element">81</div>
+                <div id="element-49" class="element">49</div>
+                <div id="element-31" class="element">31</div>
+                <div id="element-13" class="element">13</div>
+                <div id="element-5" class="element">5</div>
+            </div>
+        
+            <div class="grupo">
+                <div id="element-100" class="element">100</div>
+                <div id="element-68" class="element">68</div>
+                <div id="element-114" class="element">114</div>
+                <div id="element-82" class="element">82</div>
+                <div id="element-50" class="element">50</div>
+                <div id="element-32" class="element">32</div>
+                <div id="element-14" class="element">14</div>
+                <div id="element-6" class="element">6</div>
+            </div>
+        
+            <div class="grupo">
+                <div id="element-101" class="element">101</div>
+                <div id="element-69" class="element">69</div>
+                <div id="element-115" class="element">115</div>
+                <div id="element-83" class="element">83</div>
+                <div id="element-51" class="element">51</div>
+                <div id="element-33" class="element">33</div>
+                <div id="element-15" class="element">15</div>
+                <div id="element-7" class="element">7</div>
+            </div>
+        
+            <div class="grupo">
+                <div id="element-102" class="element">102</div>
+                <div id="element-70" class="element">70</div>
+                <div id="element-116" class="element">116</div>
+                <div id="element-84" class="element">84</div>
+                <div id="element-52" class="element">52</div>
+                <div id="element-34" class="element">34</div>
+                <div id="element-16" class="element">16</div>
+                <div id="element-8" class="element">8</div>
+            </div>
+        
+            <div class="grupo">
+                <div id="element-103" class="element">103</div>
+                <div id="element-71" class="element">71</div>
+                <div id="element-117" class="element">117</div>
+                <div id="element-85" class="element">85</div>
+                <div id="element-53" class="element">53</div>
+                <div id="element-35" class="element">35</div>
+                <div id="element-17" class="element">17</div>
+                <div id="element-9" class="element">9</div>
+            </div>
+            <div class="grupo">
+                <div id="space" class="space"></div>
+                <div id="space" class="space"></div>
+                <div id="element-118" class="element">118</div>
+                <div id="element-86" class="element">86</div>
+                <div id="element-54" class="element">54</div>
+                <div id="element-36" class="element">36</div>
+                <div id="element-18" class="element">18</div>
+                <div id="element-10" class="element">10</div>
+                <div id="element-2" class="element">2</div>
+            </div>
+        </div>
+
+        <div id="periodic-table-viewport">
+            <h1 id="category-label-viewport"></h1>
+            <div class="grupo">
+                <div id="space" class="space"></div>
+                <div id="space" class="space"></div>
+                <div id="viewport-element-87" class="element"></div>
+                <div id="viewport-element-55" class="element"></div>
+                <div id="viewport-element-37" class="element"></div>
+                <div id="viewport-element-19" class="element"></div>
+                <div id="viewport-element-11" class="element"></div>
+                <div id="viewport-element-3" class="element"></div>
+                <div id="viewport-element-1" class="element"></div>
+            </div>
+
+            <div class="grupo">
+                <div id="space" class="space"></div>
+                <div id="space" class="space"></div>
+                <div id="viewport-element-88" class="element"></div>
+                <div id="viewport-element-56" class="element"></div>
+                <div id="viewport-element-38" class="element"></div>
+                <div id="viewport-element-20" class="element"></div>
+                <div id="viewport-element-12" class="element"></div>
+                <div id="viewport-element-4" class="element"></div>
+            </div>
+
+            <div class="grupo">
+                <div id="viewport-element-89" class="element"></div>
+                <div id="viewport-element-57" class="element"></div>
+                <div id="viewport-element-AC" class="element"></div>
+                <div id="viewport-element-LA" class="element"></div>
+                <div id="viewport-element-39" class="element"></div>
+                <div id="viewport-element-21" class="element"></div>
+            </div>
+
+            <div class="grupo">
+                <div id="viewport-element-90" class="element"></div>
+                <div id="viewport-element-58" class="element"></div>
+                <div id="viewport-element-104" class="element"></div>
+                <div id="viewport-element-72" class="element"></div>
+                <div id="viewport-element-40" class="element"></div>
+                <div id="viewport-element-22" class="element"></div>
+            </div>
+
+            <div class="grupo">
+                <div id="viewport-element-91" class="element"></div>
+                <div id="viewport-element-59" class="element"></div>
+                <div id="viewport-element-105" class="element"></div>
+                <div id="viewport-element-73" class="element"></div>
+                <div id="viewport-element-41" class="element"></div>
+                <div id="viewport-element-23" class="element"></div>
+            </div>
+
+            <div class="grupo">
+                <div id="viewport-element-92" class="element"></div>
+                <div id="viewport-element-60" class="element"></div>
+                <div id="viewport-element-106" class="element"></div>
+                <div id="viewport-element-74" class="element"></div>
+                <div id="viewport-element-42" class="element"></div>
+                <div id="viewport-element-24" class="element"></div>
+            </div>
+
+            <div class="grupo">
+                <div id="viewport-element-93" class="element"></div>
+                <div id="viewport-element-61" class="element"></div>
+                <div id="viewport-element-107" class="element"></div>
+                <div id="viewport-element-75" class="element"></div>
+                <div id="viewport-element-43" class="element"></div>
+                <div id="viewport-element-25" class="element"></div>
+            </div>
+
+            <div class="grupo">
+                <div id="viewport-element-94" class="element"></div>
+                <div id="viewport-element-62" class="element"></div>
+                <div id="viewport-element-108" class="element"></div>
+                <div id="viewport-element-76" class="element"></div>
+                <div id="viewport-element-44" class="element"></div>
+                <div id="viewport-element-26" class="element"></div>
+            </div>
+
+            <div class="grupo">
+                <div id="viewport-element-95" class="element"></div>
+                <div id="viewport-element-63" class="element"></div>
+                <div id="viewport-element-109" class="element"></div>
+                <div id="viewport-element-77" class="element"></div>
+                <div id="viewport-element-45" class="element"></div>
+                <div id="viewport-element-27" class="element"></div>
+            </div>
+
+            <div class="grupo">
+                <div id="viewport-element-96" class="element"></div>
+                <div id="viewport-element-64" class="element"></div>
+                <div id="viewport-element-110" class="element"></div>
+                <div id="viewport-element-78" class="element"></div>
+                <div id="viewport-element-46" class="element"></div>
+                <div id="viewport-element-28" class="element"></div>
+            </div>
+
+            <div class="grupo">
+                <div id="viewport-element-97" class="element"></div>
+                <div id="viewport-element-65" class="element"></div>
+                <div id="viewport-element-111" class="element"></div>
+                <div id="viewport-element-79" class="element"></div>
+                <div id="viewport-element-47" class="element"></div>
+                <div id="viewport-element-29" class="element"></div>
+            </div>
+
+            <div class="grupo">
+                <div id="viewport-element-98" class="element"></div>
+                <div id="viewport-element-66" class="element"></div>
+                <div id="viewport-element-112" class="element"></div>
+                <div id="viewport-element-80" class="element"></div>
+                <div id="viewport-element-48" class="element"></div>
+                <div id="viewport-element-30" class="element"></div>
+            </div>
+
+            <div class="grupo">
+                <div id="viewport-element-99" class="element"></div>
+                <div id="viewport-element-67" class="element"></div>
+                <div id="viewport-element-113" class="element"></div>
+                <div id="viewport-element-81" class="element"></div>
+                <div id="viewport-element-49" class="element"></div>
+                <div id="viewport-element-31" class="element"></div>
+                <div id="viewport-element-13" class="element"></div>
+                <div id="viewport-element-5" class="element"></div>
+            </div>
+
+            <div class="grupo">
+                <div id="viewport-element-100" class="element"></div>
+                <div id="viewport-element-68" class="element"></div>
+                <div id="viewport-element-114" class="element"></div>
+                <div id="viewport-element-82" class="element"></div>
+                <div id="viewport-element-50" class="element"></div>
+                <div id="viewport-element-32" class="element"></div>
+                <div id="viewport-element-14" class="element"></div>
+                <div id="viewport-element-6" class="element"></div>
+            </div>
+
+            <div class="grupo">
+                <div id="viewport-element-101" class="element"></div>
+                <div id="viewport-element-69" class="element"></div>
+                <div id="viewport-element-115" class="element"></div>
+                <div id="viewport-element-83" class="element"></div>
+                <div id="viewport-element-51" class="element"></div>
+                <div id="viewport-element-33" class="element"></div>
+                <div id="viewport-element-15" class="element"></div>
+                <div id="viewport-element-7" class="element"></div>
+            </div>
+
+            <div class="grupo">
+                <div id="viewport-element-102" class="element"></div>
+                <div id="viewport-element-70" class="element"></div>
+                <div id="viewport-element-116" class="element"></div>
+                <div id="viewport-element-84" class="element"></div>
+                <div id="viewport-element-52" class="element"></div>
+                <div id="viewport-element-34" class="element"></div>
+                <div id="viewport-element-16" class="element"></div>
+                <div id="viewport-element-8" class="element"></div>
+            </div>
+
+            <div class="grupo">
+                <div id="viewport-element-103" class="element"></div>
+                <div id="viewport-element-71" class="element"></div>
+                <div id="viewport-element-117" class="element"></div>
+                <div id="viewport-element-85" class="element"></div>
+                <div id="viewport-element-53" class="element"></div>
+                <div id="viewport-element-35" class="element"></div>
+                <div id="viewport-element-17" class="element"></div>
+                <div id="viewport-element-9" class="element"></div>
+            </div>
+            <div class="grupo">
+                <div id="space" class="space"></div>
+                <div id="space" class="space"></div>
+                <div id="viewport-element-118" class="element"></div>
+                <div id="viewport-element-86" class="element"></div>
+                <div id="viewport-element-54" class="element"></div>
+                <div id="viewport-element-36" class="element"></div>
+                <div id="viewport-element-18" class="element"></div>
+                <div id="viewport-element-10" class="element"></div>
+                <div id="viewport-element-2" class="element"></div>
+            </div>
+        </div>
+    </main>
+    
+    <article id="view-element-info" class="not-display">
+        <section id="element-general-details">
+
+            <section id="element">
+                <div id="element-symbol-number">
+                    <span id="view-element-number">1</span>
+                    <h1 id="view-element-symbol">H</h1>
+                </div>
+                <div id="view-element-color"></div>
+            </section>
+
+            <section class="info">
+                <h1 id="element-name">Selenio</h1>
+                <div id="element-info">
+                    <p><span>Apariencia:</span> Lorem ipsum dolor sit amet consectetur</p>
+                    <p><span>Apariencia:</span> Lorem ipsum dolor sit amet consectetur</p>
+                    <p><span>Apariencia:</span> Lorem ipsum dolor sit amet consectetur</p>
+                    <p><span>Apariencia:</span> Lorem ipsum dolor sit amet consectetur</p>
+                    <p><span>Apariencia:</span> Lorem ipsum dolor sit amet consectetur</p>
+                    <p><span>Apariencia:</span> Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+            </section>
+
+
+        </section>
+
+        <section id="element-atom-details">
+            <section class="info">
+                <h1>Configuración Electrónica</h1>
+                <div id="electronic-configuration">
+                    <di id="electronic-diagram">
+
+                    </div>
+
+                    <div id="electronic-info">
+                        <p><span></span> Hola</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </article>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
